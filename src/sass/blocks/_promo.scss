@@ -1,0 +1,37 @@
+.promo {
+    min-height: 660px;
+    padding-top: 40px;
+    background-color: #fffeee;
+    .container {
+        position: relative;
+    }
+    &__wrapper {
+        position: relative;
+        margin-top: 201px;
+    }
+    &__header {
+        font-size: 23px;
+        span {
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+    &__subheader {
+        margin: 0;
+        font-size: 23px;
+        width: 235px;
+        line-height: 32px;
+    }
+    &__butterfly {
+        content: url('../img/butterfly.svg');
+        position: absolute;
+        left: 260px;
+        bottom: -3px;
+    }
+    &__main {
+        content: url('../img/main.png');
+        position: absolute;
+        top: 135px;
+        right: 108px;
+    }
+}

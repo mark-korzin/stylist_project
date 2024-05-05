@@ -1,0 +1,48 @@
+.popular {
+    padding: 80px 0;
+    background-color: #fffeee;
+    &__wrapper {
+        display: grid;
+        margin-top: 80px;
+        grid-template-columns: repeat(3, 300px);
+        grid-auto-rows: minmax(445px, auto);
+        justify-content: space-between;
+        row-gap: 80px;
+    }
+    &__card {
+        background-color: #fff;
+        width: 300px;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, .30));
+        hr {
+            margin: 0 auto;
+            width: 80%;
+            background-color: #dedede;
+            border: none;
+            height: 1px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        filter: brightness(.9);
+    }
+    &__descr {
+        padding: 20px;
+    }
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__footer {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price {
+        font-family: "Orchidea Pro", sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+    }
+}
