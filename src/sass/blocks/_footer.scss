@@ -1,0 +1,33 @@
+.footer {
+    background-color: #000;
+    min-height: 190px;
+    padding: 80px 0;
+    color: #fff;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__rights {
+        span {
+            font-family: "Orchidea Pro", sans-serif;
+        }
+    }
+    &__contact {
+        font-family: "Orchidea Pro", sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        a {
+            text-decoration: none;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

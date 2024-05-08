@@ -1,7 +1,12 @@
 .title {
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 700;
     &_center {
+        margin-bottom: 80px;
         text-align: center;
+    }
+    &_left {
+        font-size: 35px;
+        color: #fff;
     }
 }

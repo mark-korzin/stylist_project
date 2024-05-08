@@ -1,13 +1,12 @@
 .promo {
     min-height: 660px;
-    padding-top: 40px;
-    background-color: #fffeee;
+    background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
     .container {
         position: relative;
     }
     &__wrapper {
         position: relative;
-        margin-top: 201px;
+        margin-top: 140px;
     }
     &__header {
         font-size: 23px;
@@ -31,7 +30,7 @@
     &__main {
         content: url('../img/main.png');
         position: absolute;
-        top: 135px;
+        top: 160px;
         right: 108px;
     }
 }

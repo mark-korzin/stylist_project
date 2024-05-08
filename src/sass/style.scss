@@ -1,5 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
+@import 'libs/tiny-slider';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -11,6 +12,7 @@
 }
 
 .container {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -19,5 +21,10 @@
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/titles';
-@import 'blocks/welcome';
-@import 'blocks/popular';
+@import 'blocks/about';
+@import 'blocks/services';
+@import 'blocks/carousel';
+@import 'blocks/form';
+@import 'blocks/gallery';
+@import 'blocks/contacts';
+@import 'blocks/footer';
