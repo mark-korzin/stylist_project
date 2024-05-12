@@ -1,12 +1,18 @@
 .footer {
+    padding: 80px 0;
     background-color: #000;
     min-height: 190px;
-    padding: 80px 0;
     color: #fff;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 30px;
+    }
+    &__logo {
+        img {
+            width: 120px;
+        }
     }
     &__rights {
         span {
@@ -22,7 +28,7 @@
         display: flex;
         justify-content: space-between;
         width: 150px;
-        a {
+        &-item {
             text-decoration: none;
             img {
                 width: 30px;

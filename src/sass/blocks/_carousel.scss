@@ -4,11 +4,15 @@
         position: relative;
         margin: 0 auto;
     }
+    .tns-outer {
+        width: 42%;
+        margin: 0 auto;
+    }
     .prev, .next  {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 100px;
+        left: 250px;
         border: none;
         background-color: transparent;
         img {
@@ -17,13 +21,14 @@
         }
     }
     .next  {
-        right: 100px;
+        right: 250px;
         left: auto;
     }
     .tns-item {
         img {
             display: block;
-            width: 500px;
+            width: 375px;
+            height: 500px;
             object-fit: cover;
             margin: 0 auto;
             filter: brightness(.9);
