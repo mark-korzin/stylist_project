@@ -545,6 +545,14 @@
             }
         }
     }
+    .modal {
+        width: 55%;
+        min-height: 99px;
+        padding: 20px;
+        &__title {
+            font-size: 17px;
+        }
+    }
     .title {
         font-size: 21px;
     }

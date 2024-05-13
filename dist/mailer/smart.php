@@ -1,8 +1,9 @@
 <?php 
 
 $name = $_POST['name'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
-$text = $_POST['text'];
+$text = $_POST['textarea'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -13,12 +14,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'markofiesto77@gmail.com';                 // Наш логин
-$mail->Password = 'zyxdsyfjqkdarepr';                           // Наш пароль от ящика
+$mail->Username = 'markofiesto77@gmail.com';                 // Login
+$mail->Password = 'rddu myey kggq xquz';                           // Mail password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('markofiesto77@gmail.com', 'Corgi Simon');   // От кого письмо 
+$mail->setFrom('markofiesto77@gmail.com', 'Irena Style');   // Letter from who 
 $mail->addAddress('mark.korzin@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,12 +29,13 @@ $mail->addAddress('mark.korzin@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Вопрос или отзыв с сайта';
+$mail->Subject = 'Service order or question from the website';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
+	The user left data: <br> 
+	Name: ' . $name . ' <br>
+	Phone: ' . $phone . ' <br>
 	E-mail: ' . $email . ' <br>
-	Сообщение: ' . $text . '';
+	Message: ' . $text . '';
 
 if(!$mail->send()) {
     return false;
